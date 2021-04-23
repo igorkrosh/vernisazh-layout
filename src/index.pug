@@ -9,11 +9,39 @@ html(lang="ru")
         title Document
         include pug/head.pug
     body
-        .container
-            h1 Hi from PUG! 
-            +InputRadio('name', 'test')
-            
-            +Modal('test', 'ModalTemplate')
-            button(modal="test") Modal Test
-
+        header.navbar
+            .container
+                .logo
+                    img(src="assets/images/logo.png", alt="")
+                .menu__wrapper
+                    a(href="") Наши фасады
+                    a(href="") Примеры работ
+                    a(href="") Контакты
+                button.btn.white Обратная связь
+                .phone__wrapper
+                    a(href="") 8 (920) 051-88-85
+        section.main
+            .container
+                h1 Мечтаете о новой кухне?
+                h2 
+                    span Просто обновите фасады
+                    span от <b>955 руб</b> / шт!
+                button.btn.green Заказать
+        section.advantages
+            .container
+                h1.title Преимущества выбора в пользу замены фасадов:
+                .advantages__wrapper
+                    .advantages__item
+                        img(src="assets/images/icons/advantages1.png", alt="")
+                        span Кухонный гарнитур остается на прежнем месте
+                    .advantages__item
+                        img(src="assets/images/icons/advantages2.png", alt="")
+                        span Нет необходимости вновь менять коммуникации (воду, слив, электрику)
+                    .advantages__item
+                        img(src="assets/images/icons/advantages3.png", alt="")
+                        span Вы можете выбрать любой стиль, цвет и фактуру
+                    .advantages__item
+                        img(src="assets/images/icons/advantages4.png", alt="")
+                        span Вы экономите свои деньги и время
+                button.btn.green Заказать
         include pug/scripts.pug

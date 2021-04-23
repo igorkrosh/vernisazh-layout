@@ -3,6 +3,8 @@ body
     margin: 0;
     color: #000;
     background: #fff;
+    font-family: 'OpenSans';
+    padding-top: 84px;
 }
 
 body.lock
@@ -32,5 +34,203 @@ button, a
     cursor: pointer;
 }
 
+section
+{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.btn
+{
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'OpenSans';
+    min-width: 200px;
+}
+
+.btn.white
+{
+    color: #000;
+    background: #fff;
+}
+
+.btn.green
+{
+    color: #fff;
+    background: #006633;
+}
+
+.phone__wrapper
+{
+    color: #fff;
+    font-weight: 700;
+    font-size: 21px;
+    position: relative;
+    padding-left: 40px;
+}
+
+.phone__wrapper:after
+{
+    content: '';
+    width: 19px;
+    height: 34px;
+    background: url(../images/icons/phone_white.png);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar
+{
+    background-color: #006633;
+    color: #fff;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    .container
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .menu__wrapper
+    {
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        
+        a
+        {
+            padding: 0 10px;
+            position: relative;
+        }
+
+        a:after
+        {
+            content: '/';
+            position: absolute;
+            right: 0;
+            transform: translateX(50%);
+        }
+
+        a:last-of-type:after
+        {
+            content: none;
+        }
+    }
+}
+
+section.main
+{
+    background: url(../images/bg/3U5A0731.jpg);
+    background-size: cover;
+    padding-top: 75px;
+    padding-bottom: 95px;
+    position: relative;
+
+    h1
+    {
+        font-weight: 700;
+        font-size: 42px;
+        text-transform: uppercase;
+    }
+
+    h2
+    {
+        font-weight: 700;
+        font-size: 38px;
+
+        span
+        {
+            display: block;
+        }
+
+        span:nth-child(2)
+        {
+            font-size: 30px;
+
+            b
+            {
+                font-size: 48px;
+                color: #006633;
+            }
+        }
+    }
+
+    .container
+    {
+        position: relative;
+        z-index: 10;
+    }
+}
+
+section.main:after
+{
+    content: url(../images/bg/cloud.png);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow-x: hidden;
+    left: 0;
+    transform: translateY(60%);
+    z-index: 0;
+}
+
+.title
+{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+}
+
+section.advantages
+{
+    position: relative;
+
+    .container
+    {
+        position: relative;
+        z-index: 10;
+    }
+
+    .advantages__wrapper
+    {
+        padding: 40px 0;
+
+        .advantages__item
+        {
+            padding: 15px 0;
+            display: flex;
+            align-items: center;
+            font-size: 17px;
+            font-weight: 700;
+
+            img
+            {
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+section.advantages:after
+{
+    content: url(../images/bg/zamershik111.jpg);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 
 @import 'responce';
