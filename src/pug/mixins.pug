@@ -1,0 +1,18 @@
+include modal.pug
+
+mixin IncludeCSS(filename)
+    - let path = `assets/css/${filename}`
+    link(rel="stylesheet", href=path)
+
+mixin IncludeJS(filename)
+    - let path = `assets/js/${filename}`
+    script(src=path)
+
+mixin InputRadio(name, label)
+    label.radio= label
+        input(type="radio" name=name)
+        span.checkmark
+
+mixin BtnMenu()
+    button.btn__menu
+        span
