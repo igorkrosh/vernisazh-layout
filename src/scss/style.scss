@@ -183,7 +183,7 @@ section.main:after
     overflow-x: hidden;
     left: 0;
     transform: translateY(60%);
-    z-index: 0;
+    z-index: 1;
 }
 
 .title
@@ -198,6 +198,7 @@ section.main:after
 section.advantages
 {
     position: relative;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
 
     .container
     {
@@ -227,10 +228,85 @@ section.advantages
 
 section.advantages:after
 {
-    content: url(../images/bg/zamershik111.jpg);
+    content: '';
+    background: url(../images/bg/zamershik111.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 600px;
+    height: 600px;
     position: absolute;
     bottom: 0;
     right: 0;
+    z-index: 2;
+}
+
+section.our__facades
+{
+    .facades__wrapper
+    {
+        display: flex;
+        justify-content: space-between;
+
+        .facades__item
+        {
+            transition: 0.5s;
+            img
+            {
+                width: 260px;
+                height: 480px;
+                object-fit: cover; 
+            }
+
+            .title
+            {
+                font-size: 18px;
+                text-transform: none;
+                display: block;
+                margin: 0;
+            }
+
+            .price
+            {
+                font-size: 16px;
+                display: block;
+                font-weight: 400;
+                text-align: center;
+                margin-bottom: 10px;
+
+                b
+                {
+                    
+                    color: #006633;
+                }
+            }
+
+            .text
+            {
+                padding: 15px;
+            }
+
+            .hover__block
+            {
+                text-align: center;
+                opacity: 0;
+                pointer-events: none;
+                transition: 0.5s;
+            }
+        }
+
+        .facades__item:hover
+        {
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+            background: #fff;
+
+            .hover__block
+            {
+                opacity: 1;
+                pointer-events: all;
+            }
+        }
+    }
 }
 
 @import 'responce';
