@@ -5,6 +5,11 @@
         width: 500px;
         height: 500px;
     }
+
+    section.examples__slider .owl-nav button
+    {
+        width: 300px;
+    }
 }
 
 @media(max-width: 1200px)
@@ -22,6 +27,47 @@
     section.advantages .advantages__wrapper
     {
         max-width: 500px;
+    }
+
+    .navbar .phone__wrapper
+    {
+        font-size: 18px;
+    }
+
+    .logo
+    {
+        width: 200px;
+        display: flex;
+
+        img
+        {
+            width: 100%;
+        }
+    }
+
+    section.our__facades .facades__wrapper .facades__item
+    {
+        width: 230px;
+    }
+
+    section.banner.sale
+    {
+        background-position-x: 25%;
+    }
+
+    section.banner.consultation
+    {
+        background-position-x: 25%;
+    }
+
+    footer .info, footer .contacts
+    {
+        width: 350px;
+    }
+
+    footer .contacts
+    {
+        padding-left: 20px;
     }
 }
 

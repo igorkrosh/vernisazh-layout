@@ -287,7 +287,6 @@ section.our__facades
             .text
             {
                 padding: 15px 10px;
-                height: 100%;
                 display: flex;
                 flex-direction: column;
             }
@@ -299,6 +298,8 @@ section.our__facades
                 pointer-events: none;
                 transition: 0.5s;
                 margin-top: auto;
+                padding: 15px 10px;
+                margin: auto;
             }
         }
 
