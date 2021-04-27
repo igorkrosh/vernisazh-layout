@@ -1,8 +1,27 @@
+@media(max-width: 1440px)
+{
+    section.advantages:after
+    {
+        width: 500px;
+        height: 500px;
+    }
+}
+
 @media(max-width: 1200px)
 {
     .container
     {
         max-width: 1024px;
+    }
+
+    section.main
+    {
+        background-position-x: 40%;
+    }
+
+    section.advantages .advantages__wrapper
+    {
+        max-width: 500px;
     }
 }
 

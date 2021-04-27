@@ -4,6 +4,8 @@ function Core()
 {
     SetTabSwitcher();
     SetModal();
+    InitOwl();
+    SetQuestion();
 }
 
 function SetTabSwitcher()
@@ -95,4 +97,32 @@ function HideModal(modalId)
         $(modalId + ' .modal__dialog').removeClass('fadeOutDownBig');
         $('.modal__backdrop').remove();
     });
+}
+
+function InitOwl()
+{
+    $('section.examples__slider .owl-carousel').owlCarousel({
+        items: 1,
+        nav: true,
+        navContainer: $('section.examples__slider .owl-nav'),
+        dots: false
+    })
+}
+
+function SetQuestion()
+{
+    $('.faq .question').on('click', function() {
+        if ($(this).hasClass('active'))
+        {
+            $(this).removeClass('active');
+            $(this).find('.content').css('max-height', `0px`);
+        }
+        else
+        {
+            $(this).addClass('active');
+            let height = $(this).find('.content span').outerHeight();
+            $(this).find('.content').css('max-height', `${height}px`);
+        }
+        
+    })
 }

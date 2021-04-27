@@ -58,23 +58,90 @@ html(lang="ru")
                     .facades__item
                         img(src="assets/images/facades/2.jpg", alt="")
                         .text
-                            span.title Пленочные фасады
+                            span.title Крашеные фасады
                             span.price от <b>955 руб/</b> шт
                             .hover__block
                                 button.btn.green Заказать
                     .facades__item
                         img(src="assets/images/facades/3.jpg", alt="")
                         .text
-                            span.title Пленочные фасады
+                            span.title Шпонированные фасады
                             span.price от <b>955 руб/</b> шт
                             .hover__block
                                 button.btn.green Заказать
                     .facades__item
                         img(src="assets/images/facades/4.jpg", alt="")
                         .text
-                            span.title Пленочные фасады
+                            span.title Фасады в шпоне экзотических пород дерева
                             span.price от <b>955 руб/</b> шт
                             .hover__block
                                 button.btn.green Заказать
+        section.our__pluses
+            .container
+                .plus__item
+                    img(src="assets/images/icons/plus.png", alt="")
+                    span Собственное <br> производство
+                .plus__item
+                    img(src="assets/images/icons/plus2.png", alt="")
+                    span Более 100 видов <br> расцветов
+                .plus__item
+                    img(src="assets/images/icons/plus3.png", alt="")
+                    span Более 100 <br> фрезеровок
+                .plus__item
+                    img(src="assets/images/icons/plus4.png", alt="")
+                    span Доступная <br> цена
+        section.banner.sale
+            .container
+                h1 Акция «Приведи друга!» 
+                    small При заказе фасадов на две кухни
+                    b получите скидку 10% 
+                button.btn.green Получить
+        section.examples__slider
+            h1.title Примеры наших работ
+            .slider__wrapper
+                .owl-carousel
+                    .slider__item
+                        img(src="assets/images/slider/final- пример 1.jpg", alt="")
+                    .slider__item
+                        img(src="assets/images/slider/final- пример 1.jpg", alt="")
+                    .slider__item
+                        img(src="assets/images/slider/final- пример 1.jpg", alt="")
+                .owl-nav
+            .manufacturers
+                .container
+                    button.btn.green Производителям
+        section.faq
+            .container
+                h1.title Часто задаваемые вопросы
+                .wrapper
+                    .question
+                        h3 Пригоден ли речной песок для приготовления бетона?
+                        .content
+                            span
+                                |Речной песок не содержит глины и примесей, также имеет размер зерен, подходящий для бетонного раствора. Тем самым речной песок можно использовать для приготовления бетона.
+                    .question
+                        h3 Пригоден ли речной песок для приготовления бетона?
+                        .content
+                            span
+                                |Речной песок не содержит глины и примесей, также имеет размер зерен, подходящий для бетонного раствора. Тем самым речной песок можно использовать для приготовления бетона.
+        section.banner.consultation
+            .container
+                h1 Не знаете с чего начать?
+                    b Начните с бесплатной консультации
+                button.btn.green Консультация
+        footer
+            .container
+                .col.info
+                    span ООО «Вернисаж» - ведущий отечественный производитель мебельных фасадов.
+                    b Более 20 лет успешной работы.
+                .col.callback
+                    button.btn.green Обратная связь
+                .col.contacts
+                    span г. Н.Новгород, ул. Бетанкура д.2
+                    a(href="").phone 8 (920) 051-88-85
+                    a(href="").mail info@vernisag-fasad.ru
+                    a(href="").policy Политика конфиденциальности 
+
+
 
         include pug/scripts.pug
