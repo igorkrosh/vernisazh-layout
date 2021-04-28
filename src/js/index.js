@@ -6,6 +6,8 @@ function Core()
     SetModal();
     InitOwl();
     SetQuestion();
+    SetMobileMenu();
+    SetAncors();
 }
 
 function SetTabSwitcher()
@@ -124,5 +126,36 @@ function SetQuestion()
             $(this).find('.content').css('max-height', `${height}px`);
         }
         
+    })
+}
+
+function SetMobileMenu()
+{
+    $('.btn__menu').on('click', function() {
+        if($(this).hasClass('active'))
+        {
+            $('.mobile__menu').removeClass('active');
+            $(this).removeClass('active');
+            $('body').removeClass('lock');
+        }
+        else
+        {
+            $('.mobile__menu').addClass('active');
+            $(this).addClass('active');
+            $('body').addClass('lock');
+        }
+        
+    })
+}
+
+function SetAncors()
+{
+    $('[ancore]').on('click', function (e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: $($(this).attr('ancore')).position().top - 90,
+            left: 0,
+            behavior: 'smooth'
+        });
     })
 }

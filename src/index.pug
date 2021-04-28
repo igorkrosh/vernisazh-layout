@@ -14,12 +14,21 @@ html(lang="ru")
                 .logo
                     img(src="assets/images/logo.png", alt="")
                 .menu__wrapper
+                    a(href="" ancore="section.our__facades") Наши фасады
+                    a(href="" ancore="section.examples__slider") Примеры работ
+                    a(href="" ancore="section.banner.consultation") Контакты
+                button.btn.white Обратная связь
+                .phone__wrapper
+                    a(href="") 8 (920) 051-88-85
+                +BtnMenu()
+            .mobile__menu
+                .phone__wrapper
+                    a(href="") 8 (920) 051-88-85
+                .menu__wrapper
                     a(href="") Наши фасады
                     a(href="") Примеры работ
                     a(href="") Контакты
                 button.btn.white Обратная связь
-                .phone__wrapper
-                    a(href="") 8 (920) 051-88-85
         section.main
             .container
                 h1 Мечтаете о новой кухне?
@@ -43,7 +52,8 @@ html(lang="ru")
                     .advantages__item
                         img(src="assets/images/icons/advantages4.png", alt="")
                         span Вы экономите свои деньги и время
-                button.btn.green Заказать
+                .btn__wrapper
+                    button.btn.green Заказать
         section.our__facades
             .container
                 h1.title Наши фасады
@@ -95,7 +105,8 @@ html(lang="ru")
                 h1 Акция «Приведи друга!» 
                     small При заказе фасадов на две кухни
                     b получите скидку 10% 
-                button.btn.green Получить
+                .btn__wrapper
+                    button.btn.green Получить
         section.examples__slider
             h1.title Примеры наших работ
             .slider__wrapper
@@ -128,7 +139,8 @@ html(lang="ru")
             .container
                 h1 Не знаете с чего начать?
                     b Начните с бесплатной консультации
-                button.btn.green Консультация
+                .btn__wrapper
+                    button.btn.green Консультация
         footer
             .container
                 .col.info

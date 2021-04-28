@@ -34,6 +34,11 @@
         font-size: 18px;
     }
 
+    .navbar .container
+    {
+        flex-wrap: wrap;
+    }
+
     .logo
     {
         width: 200px;
@@ -85,6 +90,92 @@
     {
         max-width: 768px;
     }
+
+    .btn__menu
+    {
+        display: block;
+    }
+
+    .navbar .container .menu__wrapper
+    {
+        display: none;
+    }
+
+    .mobile__menu
+    {
+        display: flex;
+
+        .phone__wrapper
+        {
+            display: none;
+        }
+
+        .btn.white
+        {
+            display: none;
+        }
+    }
+
+    section.our__facades .facades__wrapper .facades__item
+    {
+        width: 260px;
+    }
+
+    section.our__facades .facades__wrapper
+    {
+        flex-wrap: wrap;
+    }
+
+    section.our__pluses .container
+    {
+        flex-wrap: wrap;
+    }
+
+    section.our__pluses .plus__item
+    {
+        width: 300px;
+        margin: 15px;
+    }
+
+    section.our__pluses .container
+    {
+        justify-content: space-evenly;
+    }
+
+    section.main
+    {
+        background-position-x: 30%;
+    }
+
+    section.advantages:after
+    {
+        width: 400px;
+        height: 400px;
+    }
+
+    footer .container
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .contacts, footer .info
+    {
+        margin: 0;
+        padding: 0;
+        width: auto;
+    }
+
+    footer .callback
+    {
+        margin: 25px;
+    }
+
+    section.faq .question
+    {
+        width: 100%;
+    }
+    
 }
 
 @media(max-width: 768px)
@@ -93,12 +184,184 @@
     {
         max-width: 576px;
     }
+
+    .navbar .container .btn.white
+    {
+        display: none;
+    }
+
+    .navbar .mobile__menu .btn.white
+    {
+        display: block;
+    }
+
+    .navbar .mobile__menu .menu__wrapper
+    {
+        margin: auto;
+    }
+
+    section.main
+    {
+        background-position-x: 35%;
+    }
+
+    section.advantages:after
+    {
+        content: none;
+    }
+
+    section.advantages .advantages__wrapper
+    {
+        max-width: 100%;
+    }
+
+    section.our__pluses .plus__item
+    {
+        width: 230px;
+    }
+
+    section.banner.sale
+    {
+        background-position-x: 30%;
+    }
+
+    section.examples__slider .owl-nav button
+    {
+        width: 150px;
+    }
+
+    section.banner.consultation
+    {
+        background-position-x: 33%;
+    }
+
+    footer .info
+    {
+        text-align: center;
+    }
 }
 
 @media(max-width: 576px)
 {
+    body
+    {
+        padding-top: 70px;
+    }
+
     .container
     {
         max-width: 320px;
+    }
+
+    .navbar
+    {
+        height: 70px;
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+
+        .container
+        {
+            padding: 0;
+        }
+    }
+
+    .navbar .container .phone__wrapper
+    {
+        display: none;
+    }
+
+    section.main
+    {
+        padding: 25px 0 45px 0;
+    }
+
+    section.main h1
+    {
+        font-size: 32px;
+    }
+
+    section.main h2
+    {
+        font-size: 26px;
+    }
+
+    section.main h2 span:nth-child(2)
+    {
+        font-size: 24px;
+    }
+
+    section.main h2 span:nth-child(2) b
+    {
+        font-size: 28px;
+    }
+
+    section.advantages .advantages__wrapper
+    {
+        padding-top: 0;
+    }
+
+    section.advantages .btn__wrapper
+    {
+        text-align: center;
+    }
+
+    section.our__facades .facades__wrapper
+    {
+        justify-content: center;
+    }
+
+    section.banner
+    {
+        padding-top: 25px;
+        padding-bottom: 45px;
+    }
+
+    section.banner h1
+    {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    section.banner .btn__wrapper
+    {
+        text-align: center;
+    }
+
+    section.examples__slider .slider__item
+    {
+        height: 400px;
+
+        img
+        {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    section.examples__slider .owl-nav button
+    {
+        width: 80px;
+    }
+
+    footer .info
+    {
+        text-align: left;
+    }
+
+    .mobile__menu .menu__wrapper a
+    {
+        font-size: 26px;
+    }
+
+    .mobile__menu .phone__wrapper
+    {
+        display: block;
+    }
+
+    section.examples__slider .owl-nav button:after
+    {
+        width: 80px;
     }
 }
